@@ -1,27 +1,171 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>dream</title>
-	</head>
-	<body style="background-color: #00aa7f">
+<head>
+<meta charset="utf-8">
+<title>text.1.1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+	/* 背景颜色-图片*/
+	body {  
+		  background-image: url('http://room.ashuiai.com/i/2024/09/05/66d8c3af98d9d.png'); /* 设置背景图片 */
+		  background-repeat: no-repeat; /* 防止背景图片重复 */
+		  background-position: center center; /* 设置背景图片的起始位置 */
+		  background-attachment: fixed; /* 使背景图片固定 */
+		background-color: #c4c4c4; /* 设置一个默认的背景颜色，以防图片加载失败 */
+	     background-size: cover; /* 使背景图片覆盖整个页面 */  
+	    background-position: center; /* 将背景图片居中 */  
+	    height: 100vh; /* 设置高度为视口高度 */  
+	    margin: 0; /* 去掉默认的边距 */  
+	        }  
+	
+	/*设置半透明左右分块区间*/
+	#under{
+	display: grid;	
+	/* background-color: aliceblue; */
+	grid-template-columns: 1fr 8fr ;/* 1份2分比例; */
+	gap:10px;/* 栅格间隙 */
+	height: 100vh; /* 使容器占满整个视口高度 */  
+	}
+	.div4{
+		 /* position: relative; */
+		  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+		/* filter: alpha(opacity=100); *//* IE的透明度设置 */
+	 height: 80%;
+	}
+	.div5{
+		border:3px #158631 dashed;
+		 background-color: rgba(0, 0, 0, 0.5);
+		height: 80%;
+	
+	}
+	
+	/*设置标题div*/
+	#DIV{
+		margin: 5px;/* 调减边距 */
+		padding: 5px;
+		overflow: outo;/* 内容溢出后滚轮查看 */
+	}
+	.div1{
+		border:3px #158631 dashed;	
+		float:left;
+			 text-align: center; /* 水平居中 */
+			 width: 200px;
+	}
+	.div2{
+			border:3px #158631 dashed;	
+			float:right;
+			width: 200px;
+				 text-align: center; /* 水平居中 */
+	}
+	.div3{
+			border:3px #158631 dashed;	
+		 text-align: center; /* 水平居中 */
+	}
 
-<center>
-		<hr  size="7px" noshade=true />
-<h1 >《破阵子·为陈同甫赋壮词以寄之》
-<h1> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;————辛弃疾 
-<h2>醉里挑灯看剑，梦回吹角连营。
-<h2>八百里分麾下炙，五十弦翻塞外声。沙场秋点兵。
-<h2>马作的卢飞快，弓如霹雳弦惊。
-<h2>了却君王天下事，赢得生前身后名。可怜白发生！
-	<hr  size="7px" noshade=true />
- <h1 style="font-family:华文彩云;" >诗句还是那么整齐对照，诶——，还记得点开链接的名字 <sup>(st)</sup>吗🤔
-		<hr  size="7px" noshade=true />	
+/* 链接颜色的控制	 */
+	a:visited{
+		/* 访问过的链接 */
+		color: #7b7bb8;
+	}
+	a :link{
+		/* 未访问的链接 */
+		color:#698555;
+	}
+	a:hover{
+		/* 鼠标移动之上的状态 */
+		color:#570080;
+	}
+	a:active{
+		/* 鼠标点击选中状态 */
+		color:#ffaa00
+	}
+
+/*引用链接部分居中*/
+.out{
+	text-align: center;
+	}
+
+
+/*顶部跳转链接目录*/
+.MAXbox {  
+    background-color: rgba(162, 162, 162, 0.8); /* 背景颜色 */  
+    display: flex; /* 使用flex布局 */  
+    color: red; /* 文本颜色 */  
+    align-items: center; /* 垂直居中 */  
+    justify-content: space-around; /* 水平间距 */  
+   /* flex-wrap: wrap; */ /* 允许换行 */  
+    /* height: 100vh; *//* 使容器占满整个视口高度 */  
+}  
+.MAXbox a:hover {  
+    color: red; /* 悬停时的颜色 */  
+}  
+.MAXbox a:active {  
+    color: #ffaa00; /* 激活时的颜色 */  
+}  
+.flex-item {/*编辑子元素格式*/3
+    background-color: rgba(255, 255, 127, 0.5);
+    width: 450px;
+    height: 30px;
+    margin: 10px;
+	/* border:3px #158631 dashed; */
+	 align-items: center; /* 垂直居中 */  
+	 text-align: center; /* 水平居中 */
+	 font-size: 17px;
+	 -webkit-box-shadow: 5px 3px 20px  3px rgba(236, 93, 21, 0.5); /* 旧版 WebKit 浏览器 */
+	     box-shadow: 5px 3px 20px  3px rgba(236, 93, 21, 0.5); /* 标准属性 */  
+}
+
+ul li{
+	font-size:  20px;
+	margin-left: 0px;
+	margin-right: 20px;
+	text-align: center;
+	/* list-style-type: none; *//*小黑点是否存在*/
+}
+
+</style>
+</head>
+
+<body>
+	<!-- 盒式结构框架-顶部跳转链接内容 -->
+<div class="MAXbox"><!--容器框架--><!--target="_blank"网页在新标签里打开-->
+<div class="flex-item"><a href="https://www.example.com" target="_blank">flex item 1</a></div><!--子元素-->
+<div class="flex-item"><a href="#" target="_blank">  flex item 2</a> </div>
+<div class="flex-item"><a href="#" target="_blank">flex item 3</a></div>
+</div>
+
+<!-- 标题部分内容 -->
+<div id="DIV">
+	<div class="div1">副标题1</div>
+	<div class="div2">副标题2</div>
+	<div class="div3">主标题</div>
+</div>
+
+<!-- 引言外部链接内容 -->
+<div class="out">
+<!-- 提示：您可以把需要的文本放置在 <iframe> 和 </iframe> 之间，这样就可以应对不支持 <iframe> 的浏览器。
+提示：使用 CSS 为 <iframe> （包括滚动条）定义样式。        嵌入可显示网页链接-->
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=719093909&bvid=BV1CQ4y1m7AM&cid=439658219&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" "  width="560"  height="315" frameborder="10" allowfullscreen>
+	<!-- allowfullscreen:这个属性允许用户将嵌入的内容切换到全屏模式。 -->
+	<p>您的浏览器不支持  iframe 标签。</p>
+</iframe>
+</div>
+
+<!-- 底部半透明分块链接 -->
+<div id="under">
+	<!-- 左分块 -->
+	<div class="div4">  
+	<ul>
+		<li>1.0--------</li>
+		<li>2.0--------</li>
 		
-		
-		
-		
-		
-	</body>
+	</ul>
+	</div>
+	
+	<div class="div5">   
+	</div>
+
+</div>
+
+</body>
 </html>
